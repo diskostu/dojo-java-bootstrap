@@ -6,19 +6,19 @@
 
     <groupId>com.xballoy</groupId>
     <artifactId>kata</artifactId>
-    <version>1.0-SNAPSHOT</version>
-    <description>Bootstrap for katas</description>
+    <version>1.0.0-SNAPSHOT</version>
+    <description>Bootstrap for katas in Java</description>
 
     <properties>
         <!-- Configuration -->
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-        <java.version>11</java.version>
+        <maven.compiler.release>15</maven.compiler.release>
 
         <!-- Test dependencies -->
         <assertj.version>3.18.1</assertj.version>
         <cucumber.version>6.9.0</cucumber.version>
-        <jqwik.version>1.3.8</jqwik.version>
+        <jqwik.version>1.3.10</jqwik.version>
         <junit.jupiter.version>5.7.0</junit.jupiter.version>
         <mockito.version>3.6.28</mockito.version>
 
@@ -106,7 +106,7 @@
                 <artifactId>maven-compiler-plugin</artifactId>
                 <version>${maven-compiler-plugin.version}</version>
                 <configuration>
-                    <release>${java.version}</release>
+                    <release>${maven.compiler.release}</release>
                 </configuration>
             </plugin>
 
