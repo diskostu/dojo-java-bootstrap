@@ -4,8 +4,8 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.xballoy</groupId>
-    <artifactId>kata</artifactId>
+    <groupId>de.diskostu</groupId>
+    <artifactId>kata-template</artifactId>
     <version>1.0.0-SNAPSHOT</version>
     <description>Bootstrap for katas in Java</description>
 
@@ -13,14 +13,14 @@
         <!-- Configuration -->
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-        <maven.compiler.release>15</maven.compiler.release>
+        <maven.compiler.release>11</maven.compiler.release>
 
         <!-- Test dependencies -->
-        <assertj.version>3.18.1</assertj.version>
+        <assertj.version>3.19.0</assertj.version>
         <cucumber.version>6.9.0</cucumber.version>
         <jqwik.version>1.3.10</jqwik.version>
-        <junit.jupiter.version>5.7.0</junit.jupiter.version>
-        <mockito.version>3.6.28</mockito.version>
+        <junit.jupiter.version>5.8.0-M1</junit.jupiter.version>
+        <mockito.version>3.8.0</mockito.version>
 
         <!-- Plugin dependencies -->
         <maven-compiler-plugin.version>3.8.1</maven-compiler-plugin.version>
@@ -33,28 +33,6 @@
             <groupId>org.assertj</groupId>
             <artifactId>assertj-core</artifactId>
             <version>${assertj.version}</version>
-            <scope>test</scope>
-        </dependency>
-
-        <!-- Cucumber -->
-        <dependency>
-            <groupId>io.cucumber</groupId>
-            <artifactId>cucumber-java</artifactId>
-            <version>${cucumber.version}</version>
-            <scope>test</scope>
-        </dependency>
-        <dependency>
-            <groupId>io.cucumber</groupId>
-            <artifactId>cucumber-junit-platform-engine</artifactId>
-            <version>${cucumber.version}</version>
-            <scope>test</scope>
-        </dependency>
-
-        <!-- jqwik -->
-        <dependency>
-            <groupId>net.jqwik</groupId>
-            <artifactId>jqwik</artifactId>
-            <version>${jqwik.version}</version>
             <scope>test</scope>
         </dependency>
 
@@ -96,6 +74,12 @@
             <artifactId>mockito-junit-jupiter</artifactId>
             <version>${mockito.version}</version>
             <scope>test</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>1.18.18</version>
         </dependency>
     </dependencies>
 
